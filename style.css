@@ -1,0 +1,142 @@
+.background-gradient{
+    background-image: linear-gradient(to right, black, rgb(0, 0, 107));
+}
+ /* Head section start */
+.head-items{
+   margin-top: 30px;
+}
+
+.logo-container img{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+.mail-container a, .nav-title, .hire-me-btn{
+   text-decoration: none;
+   color: white;
+   font-size:medium;
+   font-weight: 500;
+   position: relative;
+   transition: color 0.5s ease;  
+}
+
+.mail-container a:hover{
+    color:rgb(87, 87, 243);
+}
+
+.nav-title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-image: linear-gradient(to right, rgb(56, 56, 229) 25%, black);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.nav-title:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hire-me-btn{
+    padding: 12px 22px;
+    background-image:linear-gradient(to right, rgb(87, 87, 243), rgb(17, 17, 91));
+    border-radius: 10px;
+}
+
+.hire-me-btn:hover{
+    background-image:linear-gradient(to left, rgb(87, 87, 243),rgb(17, 17, 91));
+}
+ /* Head section end */
+
+ /* Body Section Start */
+.details-container{
+    margin-top: 5em;
+}
+
+.pic-container img{
+    background-color: black;
+    padding: 70px;
+    border: 1px solid rgb(6, 6, 127);
+    border-radius:20px ;
+    transition: all 0.8s ease;
+}
+
+.pic-container img:hover{
+    border: 1px solid rgb(100, 100, 230);
+    transform: rotate(10deg);
+}
+
+.name-container{
+    color: white;
+    font-size: 40px;
+}
+
+.info-container{
+    font-size: 60px;
+    font-weight: bold;
+    background:linear-gradient(to right,rgb(17,17,91), rgb(144, 163, 232)) ;
+    background-clip: text;
+    color: transparent;
+}
+
+.type-effect{
+    display: inline-block;
+  }
+  .typed-out{
+    color:rgb(144, 163, 232) ;
+    overflow: hidden;
+    border-right: .10em solid orange;
+    white-space: nowrap;
+    animation: 
+      typing 3s forwards;
+    font-size:60px;
+    width: 0;
+    animation-iteration-count: 2;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.description-container{
+    color:rgb(160, 158, 158);
+    font-weight: 400;
+    font-size: large;
+}
+
+.personal-details img{
+    height: 20px;
+    width: 20px;
+}
+
+.personal-details span{
+    color: rgb(170, 170, 170);
+}
+
+.cv-btn{
+    padding: 15px 50px;
+    border-radius: 30px;
+    margin-right: 20px;   
+}
+
+.social-logo img{
+    height: 35px;
+    width: 35px;
+    transition-duration: 0.2s;
+}
+
+.social-logo img:hover{
+    padding: 5px;
+}
+
+@media screen and (min-width: 993px){
+    .name-info-container{
+        padding-left: 150px;
+    }
+}
